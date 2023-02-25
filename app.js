@@ -40,3 +40,51 @@ console.log(aboutMeObj)
 aboutMeObj.country = 'Nepal'
 console.log(aboutMeObj)
 
+//Function
+function sum(firstNumber, secondNumber) {
+   return firstNumber + secondNumber
+}
+const result = sum(10, 20)
+console.log (result)
+
+const output = sum(1234, 5678)
+console.log(output)
+
+//print this line 10 times with for loop
+console.log('Running 10 times')
+
+const firstName = 'Aayushma'
+//Template Literal
+//without template literal
+console.log('Hello ' + firstName + ' is my first name')
+
+//with template literal
+console.log(`Hello ${firstName} is my first name`)
+
+const favProgrammingLanguages = ['Elixir', 'JavaScript', ' Python', 'Java' ]
+//for loop and iteration
+for(let i = 0; i < 4; i++){
+   console.log(favProgrammingLanguages[i])
+}
+// console.log('Running after loop')
+
+//Condition
+// const number = 10;
+// if (number < 20) {
+//    console.log('Your number is less than 20')
+// } else {
+//    console.log('Your number is greater than 20')
+// }
+
+// if else condition
+const number = 'Hello';
+if (number < 20) {
+   console.log('Your number is less than 20')
+} else if(number === 20){
+   console.log('Your number is greater than 20')
+} else if (number > 20) {
+   console.log('Your number is greater than 20')
+} else {
+   console.log('Invalid number')
+}
+
