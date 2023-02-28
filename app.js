@@ -63,9 +63,12 @@ console.log(`Hello ${firstName} is my first name`)
 
 const favProgrammingLanguages = ['Elixir', 'JavaScript', ' Python', 'Java' ]
 //for loop and iteration
+const arr = [0,1,2]
 for(let i = 0; i < 4; i++){
    console.log(favProgrammingLanguages[i])
+   arr.push(i)
 }
+console.log(arr) // creating side affect for a variable
 // console.log('Running after loop')
 
 //Condition
@@ -88,3 +91,35 @@ if (number < 20) {
    console.log('Invalid number')
 }
 
+//Ternary operator
+ // const nameResult = if(myName === 'Max') { return 'corrent'} else {return 'incorrect'}
+const  nameResult = myName === 'Aayushma Pal' ? 'correct ' : 'incorrect'
+console.log(nameResult)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Spread Operator
+// arrayAdd(...other)
+
+//short circuiting
+// || -> Logical OR
+// && -> Logical AND
