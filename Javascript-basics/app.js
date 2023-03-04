@@ -1,4 +1,7 @@
- //Creating variable
+
+/*
+
+// Creating variable
  //var, let, const, 
  // to create variable you need to use either 'let' or 'const'   Variable declaration list cannot be empty.
 
@@ -96,30 +99,36 @@ if (number < 20) {
 const  nameResult = myName === 'Aayushma Pal' ? 'correct ' : 'incorrect'
 console.log(nameResult)
 
+*/
+
+//Modern JavaScript Concepts 
+//Array Destructuring 
+const favLanguages = [{firstLang: 'Elixir'}, { secondLang: ['JavaScript', 'Python'] } , 'Java']
+// const backend = favLanguages[0]
+// const fullStack = favLanguages[1]
+// console.log(backend, fullStack)
+
+
+const [backend, secondObject] = favLanguages
+console.log(backend)
+
+
+//object destructuring
+const {firstLang} = backend
+console.log(firstLang)
+
+//consoling out python | regular way
+// const result = favLanguages[1].secondLang[1]
+// console.log(result)
+
+
+//consoling out phython with destructuring
+
+const {secondLang} = secondObject
+const [_, result] = secondLang
+console.log(result)
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Spread Operator
-// arrayAdd(...other)
-
-//short circuiting
-// || -> Logical OR
-// && -> Logical AND
