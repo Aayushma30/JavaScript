@@ -101,6 +101,7 @@ console.log(nameResult)
 
 */
 
+const name = 'Languages'
 //Modern JavaScript Concepts 
 //Array Destructuring 
 const favLanguages = [{firstLang: 'Elixir'}, { secondLang: ['JavaScript', 'Python'] } , 'Java']
@@ -122,13 +123,64 @@ console.log(firstLang)
 // console.log(result)
 
 
-//consoling out phython with destructuring
+//Getting python as result using destructuring
 
-const {secondLang} = secondObject
-const [_, result] = secondLang
-console.log(result)
+// const {secondLang} = secondObject
+// const [_, result] = secondLang
+// console.log(result)
+
+//Example: 
+const aboutMe = {
+   name: 'Aayu',
+   favLang: 'JavaScript',
+   secondLang: 'Python',
+}
+const {
+   name: myName,
+   favLang: {secondLang},
+} = aboutMe
+
+
+//Primitive Data Type
+// String, nuber, undefined, null, Nan, true, false
+
+// Non Primitive Data Type
+// function, object, array
+
+console.log(aboutMe)
+
+const fruits = ['orange', 'mango', 'banana']
+console.log(fruits)
+
+//callback function
+fruits.map(function (fruit) {
+   console.log(fruit)
+})
+
+//function declaration
+function add (a, b){
+   return a + b
+}
+// const addResult = add(10, 20)
+// console.log(addResult)
+
+//function Expression = treating a function like variable
+// const add = function (a, b) {
+//    return a + b
+// }
+
+//Arrow Function 
+const add = (a, b) => a + b
+   const addResult = add (10, 20)
+   console.log (addResult)
+
+const favNumbers = [1, 2, 3, 4]
+const mappedNumbers = favNumbers.map((number) => number *10)
+console.log(mappedNumbers)
 
 
 
-
-
+//reverse 
+const anotherFruits = fruits.map(function (fruit, index) {
+   return index + 1
+})
