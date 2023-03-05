@@ -101,86 +101,123 @@ console.log(nameResult)
 
 */
 
-const name = 'Languages'
-//Modern JavaScript Concepts 
-//Array Destructuring 
-const favLanguages = [{firstLang: 'Elixir'}, { secondLang: ['JavaScript', 'Python'] } , 'Java']
-// const backend = favLanguages[0]
-// const fullStack = favLanguages[1]
-// console.log(backend, fullStack)
+// const name = 'Languages'
+// //Modern JavaScript Concepts 
+// //Array Destructuring 
+// const favLanguages = [{firstLang: 'Elixir'}, { secondLang: ['JavaScript', 'Python'] } , 'Java']
+// // const backend = favLanguages[0]
+// // const fullStack = favLanguages[1]
+// // console.log(backend, fullStack)
 
 
-const [backend, secondObject] = favLanguages
-console.log(backend)
+// const [backend, secondObject] = favLanguages
+// console.log(backend)
 
 
-//object destructuring
-const {firstLang} = backend
-console.log(firstLang)
+// //object destructuring
+// const {firstLang} = backend
+// console.log(firstLang)
 
-//consoling out python | regular way
-// const result = favLanguages[1].secondLang[1]
-// console.log(result)
-
-
-//Getting python as result using destructuring
-
-// const {secondLang} = secondObject
-// const [_, result] = secondLang
-// console.log(result)
-
-//Example: 
-const aboutMe = {
-   name: 'Aayu',
-   favLang: 'JavaScript',
-   secondLang: 'Python',
-}
-const {
-   name: myName,
-   favLang: {secondLang},
-} = aboutMe
+// //consoling out python | regular way
+// // const result = favLanguages[1].secondLang[1]
+// // console.log(result)
 
 
-//Primitive Data Type
-// String, nuber, undefined, null, Nan, true, false
+// //Getting python as result using destructuring
 
-// Non Primitive Data Type
-// function, object, array
+// // const {secondLang} = secondObject
+// // const [_, result] = secondLang
+// // console.log(result)
 
-console.log(aboutMe)
+// //Example: 
+// const aboutMe = {
+//    name: 'Aayu',
+//    favLang: 'JavaScript',
+//    secondLang: 'Python',
+// }
+// const {
+//    name: myName,
+//    favLang: {secondLang},
+// } = aboutMe
 
-const fruits = ['orange', 'mango', 'banana']
-console.log(fruits)
 
-//callback function
-fruits.map(function (fruit) {
-   console.log(fruit)
-})
+// //Primitive Data Type
+// // String, nuber, undefined, null, Nan, true, false
 
-//function declaration
-function add (a, b){
-   return a + b
-}
-// const addResult = add(10, 20)
-// console.log(addResult)
+// // Non Primitive Data Type
+// // function, object, array
 
-//function Expression = treating a function like variable
-// const add = function (a, b) {
+// console.log(aboutMe)
+
+// const fruits = ['orange', 'mango', 'banana']
+// console.log(fruits)
+
+// //callback function
+// fruits.map(function (fruit) {
+//    console.log(fruit)
+// })
+
+// //function declaration
+// function add (a, b){
 //    return a + b
 // }
+// // const addResult = add(10, 20)
+// // console.log(addResult)
 
-//Arrow Function 
-const add = (a, b) => a + b
-   const addResult = add (10, 20)
-   console.log (addResult)
+// //function Expression = treating a function like variable
+// // const add = function (a, b) {
+// //    return a + b
+// // }
 
-const favNumbers = [1, 2, 3, 4]
-const mappedNumbers = favNumbers.map((number) => number *10)
-console.log(mappedNumbers)
+// //Arrow Function 
+// // const add = (a, b) => a + b
+// //    const addResult = add (10, 20)
+// //    console.log (addResult)
+
+// // const favNumbers = [1, 2, 3, 4]
+// // const mappedNumbers = favNumbers.map((number) => number *10)
+// // console.log(mappedNumbers)
 
 
 
-//reverse 
-const anotherFruits = fruits.map(function (fruit, index) {
-   return index + 1
-})
+// // //reverse 
+// // const anotherFruits = fruits.map(function (fruit, index) {
+// //    return index + 1
+// // })
+
+
+//spread operator
+
+//  const durations = [-2, -1, 1, 2, -3, 7, -10, 0 , 0]
+ 
+//rest parameter/operator
+function test(...arrayNumbers) {
+
+}
+
+ function arrayAdd(a,b,c){
+   console.log(a)
+
+ }
+ //rest parameter/operator
+ const [firstElement, ...others] = [ 1,2,3,4]
+ console.log(others)
+
+ //spread operator syntax
+ arrayAdd (...others)
+
+ //short circuiting
+//  || -> logical OR 
+//  && -> Logical AND
+//   ! -> NOT
+
+//falsy value 
+//0, '' (empty String), undefined, null, NaN, false, 
+
+console.log( 0 || 1)
+console.log(1 || 2)
+ //short circuited at truthy value so outcome will be 2 
+console.log('' || 2 || false)
+//outcome will be a:2
+console.log({a:2} || [1,2,3] || 'hello' || a+2)
+
