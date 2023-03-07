@@ -204,7 +204,7 @@ function test(...arrayNumbers) {
  console.log(others)
 
  //spread operator syntax
- arrayAdd (...others)
+//  arrayAdd (...others)
 
  //short circuiting
 //  || -> logical OR 
@@ -214,10 +214,40 @@ function test(...arrayNumbers) {
 //falsy value 
 //0, '' (empty String), undefined, null, NaN, false, 
 
-console.log( 0 || 1)
-console.log(1 || 2)
- //short circuited at truthy value so outcome will be 2 
-console.log('' || 2 || false)
-//outcome will be a:2
-console.log({a:2} || [1,2,3] || 'hello' || a+2)
+// console.log( 0 || 1)
+// console.log(1 || 2)
+//  //short circuited at truthy value so outcome will be 2 
+// console.log('' || 2 || false)
+// //outcome will be a:2
+// console.log({a:2} || [1,2,3] || 'hello' || a+2)
+
+//Scope and Scope Chain
+
+//Global Scope
+const myCountry = 'Nepal'
+
+// Introduced in modern javaScripe
+//Block Level Scope
+if(true) {
+   const myCountry = 'Nepal'
+   console.log(myCountry)
+}
+
+//Function Level Scope
+function printountry() {
+   const myCountry = 'Nepal'
+   console.log(myCountry)
+}
+
+//Splice Method
+// let arr = [5, 1, 8, 10, 12, 14, 16, 18]
+// arr.splice(3, 4, 'tacos', 'Nepal')
+// console.log(arr)
+
+//Slice method 
+//output will be new array won't affect the original array
+let arr = [5, 1, 8]
+let slicedArr = arr.slice(2)
+console.log(arr)
+console.log(slicedArr)
 
